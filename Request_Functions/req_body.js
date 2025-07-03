@@ -14,6 +14,10 @@ app.post('/signup', function (req, res) {
 
     res.send();
 });
+app.get('/signup', (req, res) => {
+  res.send('Signup page loaded');
+});
+
 
 app.listen(PORT, function (err) {
     if (err) console.log(err);
